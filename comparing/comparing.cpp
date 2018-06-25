@@ -11,7 +11,7 @@ double Max(double f1, double f2)
 	else
 		return f2;
 }
-int Max(int n1, int n2)
+int max(int n1, int n2)
 {
 	if (n1 > n2)
 		return n1;
@@ -30,7 +30,7 @@ double Max(double f1, double f2, double f3)
 	else
 		return temp;
 }
-int Max(int n1, int n2,int n3)
+int Max(int n1=14, int n2=13,int n3=13)
 {
 	int temp;
 	if (n1 > n2)
@@ -46,8 +46,9 @@ int main()
 {
 	cout << Max(1.2, 3.6) << endl;
 	cout << Max(1.2, 6.5, 4.3) << endl;
-	cout << Max(6,4) << endl;
-	cout << Max(5, 6,9) << endl;
+	cout << Max(6) << endl;
+	cout << max(5,6) << endl;
 	return 0;
 }
-
+//函数的重载是函数名相同但参数列表不同。
+//两个double 是函数的重载，int也是函数的重载
